@@ -36,7 +36,7 @@ Every microservice is built using minimalist, secure Alpine Node base layers.
   </tr>
   <tr>
     <td><img src="./screenshots/backend-productservice-docker-build.png" alt="Product Build" width="400"/></td>
-    <td><img src="./screenshots/backend-orderservice-docker-build.png" alt="Order Build" width="400"/></td>
+    <td><img src="./screenshots/backend-order-service-docker-build.png" alt="Order Build" width="400"/></td>
   </tr>
   <tr>
     <td><strong>Cart Service Build</strong></td>
@@ -50,7 +50,7 @@ Every microservice is built using minimalist, secure Alpine Node base layers.
 
 ### 📤 2. Central Image Registry Hosting (Docker Hub)
 All compiled application components successfully tracked and hosted under the public `jbshk` repository index namespace.
-![DockerHub Active Repositories Overview](./screenshots/DockerImages_On-DockerHub)
+![DockerHub Active Repositories Overview](./screenshots/DockerImages_On-DockerHub.png)
 
 ### 🏗️ 3. Infrastructure as Code Orchestration (Terraform)
 VPC subnets, internet gateways, secure routing rules, and compute host servers provisioned in the **Mumbai (`ap-south-1`)** cloud boundary region.
@@ -61,13 +61,13 @@ VPC subnets, internet gateways, secure routing rules, and compute host servers p
   </tr>
   <tr>
     <td><img src="./screenshots/Terraform-Apply.png" alt="Terraform Initial Apply" width="400"/></td>
-    <td><img src="./screenshots/Terraform-Apply-2.png" alt="Terraform Final Outputs" width="400"/></td>
+    <td><img src="./screenshots/Terraform-Apply2.png" alt="Terraform Final Outputs" width="400"/></td>
   </tr>
 </table>
 
 ### 🛡️ 4. AWS Console Security Verification
 The custom security group mapping verifies that only administrative maintenance vectors (Port `22`) and web inputs (Port `80`) are exposed externally, keeping backend engines private.
-![AWS Security Groups Rules Metric](./screenshots/SecurityGroup)
+![AWS Security Groups Rules Metric](./screenshots/SecurityGroup.png)
 
 ### 🚀 5. Runtime Container Validation (`docker ps`)
 SSH connection metrics verification verifying that the automated initialization configurations successfully deployed the target image stack inside the remote compute host.
